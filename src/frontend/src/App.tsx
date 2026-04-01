@@ -201,8 +201,18 @@ export default function App() {
         </AnimatePresence>
       </header>
 
-      {/* ── HERO — WHITE ── */}
-      <section id="home" className="pt-20" style={{ background: "#ffffff" }}>
+      {/* ── HERO — WHITE with subtle bg ── */}
+      <section
+        id="home"
+        className="pt-20"
+        style={{
+          background: "#ffffff",
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.88) 0%, rgba(255,255,255,0.86) 100%), url('/assets/generated/hero-closet-wide.dim_1920x1080.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="flex flex-col lg:flex-row items-center gap-12 py-24 lg:py-32">
             {/* Logo — large focal point */}
